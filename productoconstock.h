@@ -3,7 +3,7 @@
 
 #include "Producto.h"
 
-class productoconstock : Producto
+class productoconstock : public Producto
 {
 public:
     // Constructor

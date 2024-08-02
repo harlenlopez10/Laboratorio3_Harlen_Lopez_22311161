@@ -10,7 +10,7 @@ double productocondescuento::calcularValorTotal() const {
 }
 
 // Implementación del método mostrarInformacion() que muestra el descuento
-void productocondescuento::mostrarInformacion() const {
+void productocondescuento::mostrarInformacion(QTextEdit *textEdit) const {
     Producto::mostrarInformacion();
     std::cout << "Descuento: " << descuento << "%" << std::endl;
 }

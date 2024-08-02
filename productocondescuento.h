@@ -2,6 +2,7 @@
 #define PRODUCTOCONDESCUENTO_H
 
 #include "Producto.h"
+#include <QTextEdit>
 
 class productocondescuento : public Producto
 {
@@ -12,9 +13,13 @@ public:
     double calcularValorTotal() const override;
 
     // Implementación del método mostrarInformacion() que muestra el descuento
-    void mostrarInformacion() const override;
+    void mostrarInformacion(QTextEdit* textEdit) const override{
 
-private:
+
+    }
+    ~productocondescuento() override{}
+
+private:QTextEdit* textEdit;
     double descuento;  // Porcentaje de descuento aplicado al producto
 };
 

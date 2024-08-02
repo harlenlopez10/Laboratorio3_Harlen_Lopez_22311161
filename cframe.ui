@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -112,33 +112,13 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="descProducto">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>270</y>
-        <width>113</width>
-        <height>24</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="precioProducto">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>130</y>
-        <width>113</width>
-        <height>24</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="descripcion">
       <property name="geometry">
        <rect>
         <x>500</x>
         <y>230</y>
-        <width>113</width>
-        <height>24</height>
+        <width>151</width>
+        <height>51</height>
        </rect>
       </property>
      </widget>
@@ -155,6 +135,63 @@
        <string>Agregar</string>
       </property>
      </widget>
+     <widget class="QSpinBox" name="SB_DESCUENTO">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>260</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CB_DESCUENTO">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>130</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Descuento</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QDoubleSpinBox" name="DSB_PRECIO">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>120</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>100000.990000000005239</double>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -165,6 +202,29 @@
      <attribute name="title">
       <string>Mostar</string>
      </attribute>
+     <widget class="QTextEdit" name="TextMostrar">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>150</y>
+        <width>441</width>
+        <height>281</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMostrar">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>260</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>

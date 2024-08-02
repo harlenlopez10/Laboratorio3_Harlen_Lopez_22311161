@@ -17,6 +17,13 @@ public:
     cframe(QWidget *parent = nullptr);
     ~cframe();
 
+private slots:
+    void on_AggBtn_clicked();
+
+    void on_CB_DESCUENTO_currentIndexChanged(int index);
+
+    void on_btnMostrar_clicked();
+
 private:
     Ui::cframe *ui;
 };
